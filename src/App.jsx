@@ -8,19 +8,19 @@ function App() {
 
   //Value = +-/X
   const Calculate = (value) =>{
-console.log(value)
+    console.log(value)
 
  switch (value) {
-    case "add":
+    case "+":
       setAnswer(Number(first + second)) //Number is need to stop concatination
       break
-    case "subtract":
+    case "-":
       setAnswer(first - second)
       break
-    case "multiply":
+    case "X":
       setAnswer(first * second)
       break
-    case "divide":
+    case "/":
       setAnswer(first / second)
       break
     default:
