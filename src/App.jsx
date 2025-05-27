@@ -30,7 +30,23 @@ function App() {
   
   return (
     <>
-      <div>
+      <div className='App-header'>
+        <h1>Simple Calculator</h1>
+        <input type="number" value={first} onChange={(e) => setFirst(e.target.value)} />
+        <input type="number" value={second} onChange={(e) => setSecond(e.target.value)} />
+<input type="number" value={answer} readOnly />
+
+        <div className='calculator'>
+          <div className='display'>
+            <p>{first} + {second} = {answer}</p>
+          </div>
+          <div className='buttons'>
+            <button onClick={() => Calculate("+")}>+</button>
+            <button onClick={() => Calculate("-")}>-</button>
+            <button onClick={() => Calculate("X")}>X</button>
+            <button onClick={() => Calculate("/")}>/</button>
+          </div>
+        </div>
       
       </div>
       
