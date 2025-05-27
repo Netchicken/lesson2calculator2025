@@ -4,72 +4,95 @@
   padding: 2rem;
   text-align: center;
   * {
-      font-size: 20px;
-    }
-  
-    h1 {
-      margin-top: 12px;
-    }
-  
-    .calc-box {
-      box-shadow: 0px 0px 100px #06678a;
-      padding: 20px;
-      margin: 20px auto;
-      width: 300px;
-      /*width of box */
-    }
-  
-    .button {
-      border: 0.5px solid #413f3f;
-      color: rgb(182, 241, 240);
-      justify-content: center;
-      align-items: center;
-      background-color: #428e57;
-      width: 50px;
-      height: 50px;
-      transition: all 0.4s ease-in-out;
-      cursor: pointer;
-    }
-  
-    .button:hover {
-      background-color: #525252;
-    }
-  
-    .digits button {
-      background-color: #cfd867;
-      height: 50px;
-      cursor: pointer;
-      transition: all 0.4s ease-in-out;
-      border: 0.5px solid #b0b0b0;
-    }
-  
-    .digits button:hover {
-      background-color: #c9c9c9;
-    }
-  
-    .output {
-      height: 50px;
-      box-shadow: inset 0px 0px 20px #d1ffef;
-      padding-right: 2%;
-      text-align: right;
-      font-size: 30px;
-      display: flex;
-      opacity: 46.5%;
-      background-color: #c5c5c5;
-      border: 1px solid black;
-      flex-direction: column;
-    }
-  
-    .preRes {
-      opacity: 26.5%;
-    }
+    font-size: 20px;
+  }
 
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
 
+  .App-link {
+    color: #61dafb;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .Singlebutton {
+    border: 0.5px solid #413f3f;
+    color: rgb(182, 241, 240);
+    justify-content: center;
+    align-items: center;
+    background-color: #428e57;
+    width: 150px;
+    height: 50px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .Singlebutton:hover {
+    background-color: #11dd0a;
+  }
+  .calc-box {
+    box-shadow: 0px 0px 100px #06678a;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    /*width of box */
+  }
+
+  .button {
+    border: 0.5px solid #413f3f;
+    color: rgb(182, 241, 240);
+    justify-content: center;
+    align-items: center;
+    background-color: #428e57;
+    width: 50px;
+    height: 50px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #525252;
+  }
+
+  .digits button {
+    /* background-color: #cfd867; */
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border: 0.5px solid #b0b0b0;
+  }
+
+  .digits button:hover {
+    background-color: #c9c9c9;
+  }
+
+  .output {
+    height: 50px;
+    box-shadow: inset 0px 0px 20px #d1ffef;
+    padding-right: 2%;
+    text-align: right;
+    font-size: 30px;
+    display: flex;
+    opacity: 46.5%;
+    background-color: #c5c5c5;
+    border: 1px solid black;
+    flex-direction: column;
+  }
+
+  .preRes {
+    opacity: 26.5%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
   }
 }
-}
-
